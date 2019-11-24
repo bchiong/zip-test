@@ -23,7 +23,11 @@ export class FormComponent {
   onSubmit() {
     if (this.eligibilityForm.valid) {
       console.log('Form Payload:' + JSON.stringify(this.eligibilityForm.value));
+      this.eligibilityForm.reset();
       this.formSubmitted = true;
+      setTimeout(() => {
+        this.formSubmitted = false;
+      }, 3000);
     } else {
       console.log('Please fill in form');
     }
