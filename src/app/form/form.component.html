@@ -1,27 +1,31 @@
-<form [formGroup]="eligibilityForm" (ngSubmit)="onSubmit()">
-  <label>
-    Business name
-    <input type="text" formControlName="businessName">
-  </label>
+<div class="card">
+  <div class="card-content">
+    <form [formGroup]="eligibilityForm" (ngSubmit)="onSubmit()">
+      <label>
+        Business name
+        <input class="input" type="text" formControlName="businessName">
+      </label>
 
-  <label>
-    Email address
-    <input type="email" formControlName="emailAddress">
-  </label>
+      <label>
+        Email address
+        <input class="input" type="email" formControlName="emailAddress">
+      </label>
 
-  <label>
-    First name
-    <input type="text" formControlName="firstName">
-  </label>
+      <label>
+        First name
+        <input class="input" type="text" formControlName="firstName">
+      </label>
 
-  <label>
-    Last Name
-    <input type="text" formControlName="lastName">
-  </label>
+      <label>
+        Last Name
+        <input class="input" type="text" formControlName="lastName">
+      </label>
 
-  <label>
-    Mobile number
-    <input type="tel" formControlName="mobileNumber">
-  </label>
-  <button type="submit">Continue your 3 step check</button>
-</form>
+      <label>
+        Mobile number
+        <input class="input" type="tel" formControlName="mobileNumber">
+      </label>
+      <button class="button is-primary" type="submit">Continue your 3 step check</button>
+    </form>
+  </div>
+</div>

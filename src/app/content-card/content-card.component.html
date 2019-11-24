@@ -1,7 +1,10 @@
-<div>
+<div class="card">
   <img *ngIf = image src="{{image}}"/>
-  <h3>{{title}}</h3>
-  <p>
-    <ng-content></ng-content>
-  </p>
+  <div class="card-content">
+    <div class="content"><h3 class="card-header-title is-centered">{{title}}</h3>
+      <p class="is-centered">
+        <ng-content></ng-content>
+      </p>
+    </div>
+  </div>
 </div>

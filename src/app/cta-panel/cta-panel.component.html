@@ -1,8 +1,15 @@
-<h1>
-  {{title}}
-</h1>
-<p>
-  <ng-content></ng-content>
-</p>
-<a href="">{{buttonText}}</a>
-<p>Contact Sales</p>
+<section class="section">
+  <div class="container is-centered">
+    <div class="columns">
+      <div class="column has-text-centered">
+        <h1 class="title is-centered">
+          {{title}}
+        </h1>
+        <p>
+          <ng-content></ng-content>
+        </p>
+        <a class="button" href="">{{buttonText}}</a>
+        <p>Contact Sales</p></div>
+    </div>
+  </div>
+</section>
