@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./content-panel.component.scss']
 })
 export class ContentPanelComponent implements OnInit {
-
+  @Input() hasBackground: boolean;
   @Input() title: string;
 
   constructor() { }

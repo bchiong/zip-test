@@ -1,0 +1,28 @@
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700,900&display=swap');
+// Set your brand colors
+$blue: #424876;
+$light-blue: #1C70F2;
+$pink: #FA7C91;
+$grey: #9598B2;
+$grey-light: #F4F5F7;
+$white: #FFFFFF;
+$teal: #35C5C3;
+// Update Bulma's global variables
+$grey-dark: $grey;
+$grey-light: $grey-light;
+$primary: $blue;
+$link: $blue;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+
+// Typography
+$body-color: $blue;
+$family-sans-serif: "Rubik", sans-serif;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
