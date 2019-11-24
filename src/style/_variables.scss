@@ -14,15 +14,14 @@ $grey-dark: $grey;
 $grey-light: $grey-light;
 $primary: $blue;
 $link: $blue;
-//$widescreen-enabled: false;
-//$fullhd-enabled: false;
 
 // Typography
 $body-color: $blue;
 $family-sans-serif: "Rubik", sans-serif;
-
+//$card-shadow:
 // Update some of Bulma's component variables
 $body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);

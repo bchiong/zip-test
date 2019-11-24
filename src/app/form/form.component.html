@@ -1,5 +1,8 @@
-<div class="card">
+<div class="card card-form">
   <div class="card-content">
+    <p class="title is-left has-text-left has-text-weight-bold is-size-4">
+      Find out if your business is eligible in three quick
+      steps</p>
     <form [formGroup]="eligibilityForm" (ngSubmit)="onSubmit()">
       <label>
         Business name
@@ -25,7 +28,17 @@
         Mobile number
         <input class="input" type="tel" formControlName="mobileNumber">
       </label>
-      <button class="button is-primary" type="submit">Continue your 3 step check</button>
+      <article *ngIf="eligibilityForm.invalid && !eligibilityForm.untouched" class="message is-danger">
+        <div class="message-body">
+         Please review your details
+        </div>
+      </article>
+      <article *ngIf="formSubmitted" class="message is-info">
+        <div class="message-body">
+          Form submitted
+        </div>
+      </article>
+      <button *ngIf="eligibilityForm.valid" class="button button-fullWidth is-primary" type="submit">Continue your 3 step check</button>
     </form>
   </div>
 </div>

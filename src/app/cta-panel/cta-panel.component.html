@@ -1,14 +1,16 @@
-<section class="section">
+<section class="section section-cta is-medium">
   <div class="container is-centered">
     <div class="columns">
       <div class="column has-text-centered">
-        <h1 class="title is-centered">
+        <h1 class="title">
           {{title}}
         </h1>
-        <p>
-          <ng-content></ng-content>
-        </p>
-        <a class="button" href="">{{buttonText}}</a>
+        <div class="content">
+          <p class="has-text-white is-size-5">
+            <ng-content></ng-content>
+          </p>
+        </div>
+        <a class="button button-inverted" href="">{{buttonText}}</a>
         <p>Contact Sales</p></div>
     </div>
   </div>

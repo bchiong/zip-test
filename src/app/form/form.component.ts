@@ -11,6 +11,7 @@ export class FormComponent {
     private formBuilder: FormBuilder) {
   }
 
+  formSubmitted = false;
   eligibilityForm = this.formBuilder.group({
     businessName: ['', Validators.required],
     emailAddress: ['', [Validators.required, Validators.email]],
@@ -22,6 +23,7 @@ export class FormComponent {
   onSubmit() {
     if (this.eligibilityForm.valid) {
       console.log('Form Payload:' + JSON.stringify(this.eligibilityForm.value));
+      this.formSubmitted = true;
     } else {
       console.log('Please fill in form');
     }

@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent implements OnInit {
-
+  @Input() theme?: string;
   @Input() image?: string;
   @Input() title: string;
 

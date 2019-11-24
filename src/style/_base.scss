@@ -1,0 +1,13 @@
+.input {
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $primary;
+  margin-bottom: 1rem;
+
+  &:focus {
+    box-shadow: $input-shadow;
+  }
+}
+

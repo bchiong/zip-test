@@ -1,0 +1,26 @@
+.card {
+  box-shadow: none;
+  color: $primary;
+
+  &-header {
+    &-title {
+      color: $primary;
+    }
+  }
+
+  &-centered {
+    text-align: center;
+  }
+
+  &-form {
+    box-shadow: $box-shadow;
+  }
+
+  &-dark {
+    background-color: $primary;
+
+    & * {
+      color: $white;
+    }
+  }
+}

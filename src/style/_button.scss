@@ -1,0 +1,14 @@
+.button {
+  border-radius: 3rem;
+  padding: 0 5rem;
+
+  &-inverted {
+    border: none;
+    background-color: $white;
+    color: $light-blue;
+  }
+
+  &-fullWidth {
+    width: 100%;
+  }
+}

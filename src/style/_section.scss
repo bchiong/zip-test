@@ -1,5 +1,22 @@
 .section {
-    &-light {
-      background-color: $grey-light;
+  &-light {
+    background-color: $grey-light;
+  }
+
+  &-dark {
+    background-color: $primary;
+  }
+
+  &-cta {
+    //background-image: url("~src/assets/img/cta-image.png");
+    background: linear-gradient(0deg, rgba(34, 40, 94, 0.6), rgba(34, 40, 94, 0.6)), url(~src/assets/img/cta-image.png);
+    background-size: cover;
+    & * {
+      color: white;
     }
+
+    & * > * {
+      margin-bottom: 1rem;
+    }
+  }
 }
