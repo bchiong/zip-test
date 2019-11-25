@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'zip-tab-panel',
   templateUrl: './tab-panel.component.html',
-  styleUrls: ['./tab-panel.component.scss']
 })
 export class TabPanelComponent {
 

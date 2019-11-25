@@ -4,7 +4,6 @@ import {FormControl, FormGroup, FormBuilder, Validators} from '@angular/forms';
 @Component({
   selector: 'zip-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
   constructor(
