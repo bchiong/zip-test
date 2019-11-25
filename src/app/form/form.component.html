@@ -38,7 +38,7 @@
           Form submitted
         </div>
       </article>
-      <button *ngIf="eligibilityForm.valid" class="button button-fullWidth is-primary" type="submit">Continue your 3 step check</button>
+      <button [disabled]="!eligibilityForm.valid" [ngClass]="{'is-primary':eligibilityForm.valid}" class="button button-fullWidth" type="submit">Continue your 3 step check</button>
     </form>
   </div>
 </div>
