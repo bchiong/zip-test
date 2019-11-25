@@ -1,6 +1,6 @@
 <div class="card card-centered" [ngClass]="{'card-dark': theme == 'dark'}">
-  <img *ngIf=image src="{{image}}"/>
   <div class="card-content">
+    <img *ngIf=image src="../../assets/icons/{{image.toLowerCase()}}.svg" alt="{{image}}"/>
     <h3 class="card-header-title is-centered is-size-5">{{title}}</h3>
     <p class="has-text-centered">
       <ng-content></ng-content>

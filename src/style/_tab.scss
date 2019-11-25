@@ -1,0 +1,39 @@
+.tabs {
+  ul {
+    border-color: $grey-dark;
+  }
+
+  &-groupIcon {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+  }
+
+  &.is-boxed {
+    li {
+      background-color: $grey-light;
+      border-bottom-color: $grey-dark;
+
+      &.is-active {
+        a {
+          border-color: $grey-dark;
+        }
+      }
+
+      a {
+        font-weight: bold;
+        min-height: 8rem;
+      }
+    }
+  }
+
+  &-body {
+    border-right: 1px solid $grey-dark;
+    border-bottom: 1px solid $grey-dark;
+    border-left: 1px solid $grey-dark;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}

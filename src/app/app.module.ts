@@ -12,6 +12,7 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { ContentPanelComponent } from './content-panel/content-panel.component';
 import { CtaPanelComponent } from './cta-panel/cta-panel.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { TabPanelComponent } from './tab-panel/tab-panel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     ContentCardComponent,
     SubHeaderComponent,
     ContentPanelComponent,
-    CtaPanelComponent
+    CtaPanelComponent,
+    TabPanelComponent
   ],
   imports: [
     BrowserModule,
