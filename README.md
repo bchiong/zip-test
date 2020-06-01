@@ -2,6 +2,8 @@
 
 Angular site for a coding test for Zip.
 
+Site: https://practical-liskov-c6466f.netlify.app/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
